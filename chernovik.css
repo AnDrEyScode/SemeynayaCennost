@@ -122,7 +122,7 @@ input[type="button"] {
 .third-video {
   height: 380px;
   width: 580px;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
 @media screen and (max-width: 800px) {
@@ -131,11 +131,15 @@ input[type="button"] {
   }
   .third-video {
     width: 90%;
-    height: 300px;
+    height: 250px;
   }
 
   .third-text {
     width: 100%;
+  }
+
+  .third-btn {
+    margin: auto;
   }
 }
 
@@ -150,5 +154,9 @@ input[type="button"] {
 
   .third-text {
     width: 90%;
+  }
+
+  .third-btn {
+    margin: auto;
   }
 }
