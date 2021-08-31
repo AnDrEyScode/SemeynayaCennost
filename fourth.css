@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "Montserrat-Light"; /* Гарнитура шрифта */
-  src: url("static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+  src: url("fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: "Montserrat-Semibold";
-  src: url("static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Blacker Display";
-  src: url("static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+  src: url("fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
 }
 
 html {
@@ -70,9 +70,8 @@ h2 {
 .fourth-double {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  /*flex: 1 1 auto;*/
+  align-items: center;
 }
 
 .fourth-single {
@@ -82,9 +81,11 @@ h2 {
   flex-flow: column nowrap;
 }
 
-.fourth-single > p,
-.fourth-single > h2 {
+.fourth-single > p {
   width: 250px;
+}
+.fourth-single > h2 {
+  width: 280px;
 }
 
 .fourth-single > img,
@@ -108,13 +109,17 @@ h2 {
 @media screen and (max-width: 800px) {
   .fourth-container {
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: stretch;
   }
 
   .fourth-double {
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  .fourth-single {
+    flex: 0 0 150px;
   }
 }
 
@@ -138,4 +143,7 @@ h2 {
   .fourth-single > img {
     width: 40px;
   }
-}*/
+}
+
+
+*/
