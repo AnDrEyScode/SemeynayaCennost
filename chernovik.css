@@ -19,7 +19,6 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  min-width: 690px;
 }
 
 div,
@@ -92,21 +91,10 @@ input[type="button"] {
 .third-content {
   display: flex;
   flex-flow: row wrap;
-  margin: 0px 5%;
+  margin: auto;
   justify-content: space-evenly;
   align-items: flex-end;
   align-content: center;
-}
-
-.third-text {
-  width: 540px;
-  margin-top: 20px;
-}
-
-.third-video {
-  height: 380px;
-  width: 580px;
-  margin-top: 20px;
 }
 
 .third-video > iframe {
@@ -126,21 +114,18 @@ input[type="button"] {
   justify-content: center;
 }
 
-@media all and (max-width: 480px) {
-  .third-content {
-    width: 100%;
-  }
-  .third-video {
-    width: 80%;
-    height: 250px;
-  }
-
-  .third-text {
-    width: 90%;
-  }
+.third-text {
+  width: 540px;
+  margin-top: 20px;
 }
 
-@media all and (max-width: 800px) {
+.third-video {
+  height: 380px;
+  width: 580px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
   .third-content {
     width: 80%;
   }
@@ -151,5 +136,19 @@ input[type="button"] {
 
   .third-text {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .third-content {
+    width: 100%;
+  }
+  .third-video {
+    width: 80%;
+    height: 250px;
+  }
+
+  .third-text {
+    width: 90%;
   }
 }
