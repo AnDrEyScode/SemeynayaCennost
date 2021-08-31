@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: "Montserrat-Light"; /* Гарнитура шрифта */
-  src: url("/static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+  src: url("static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: "Montserrat-Semibold";
-  src: url("/static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  src: url("static/fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Blacker Display";
-  src: url("/static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+  src: url("static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
 }
 
 html {
