@@ -123,11 +123,12 @@ h2 {
   }
 }
 
+/*
 @media screen and (max-width: 480px) {
   .fourth-single {
     flex: 1 1 100%;
   }
-}
+}*/
 
 /*
 @media screen and (max-width: 480px) {
