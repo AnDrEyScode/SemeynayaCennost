@@ -108,7 +108,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .fourth-container {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: stretch;
   }
 
@@ -119,16 +119,15 @@ h2 {
   }
 
   .fourth-single {
-    flex: 0 0 100%;
+    flex: 0 0 150px;
   }
 }
 
-/*
 @media screen and (max-width: 480px) {
   .fourth-single {
-    flex: 1 1 100%;
+    flex: 0 0 100%;
   }
-}*/
+}
 
 /*
 @media screen and (max-width: 480px) {
@@ -150,7 +149,4 @@ h2 {
   .fourth-single > img {
     width: 40px;
   }
-}
-*/
-
-
+}*/
