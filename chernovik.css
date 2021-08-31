@@ -83,9 +83,6 @@ input[type="button"] {
   text-align: center;
   padding: 0px 20px;
   margin: 0;
-  height: 380px;
-  display: flex;
-  align-content: flex-end;
 }
 
 .third-text > h1 {
@@ -98,6 +95,7 @@ input[type="button"] {
   margin: 0px 5%;
   justify-content: space-evenly;
   align-items: flex-end;
+  align-content: center;
 }
 
 .third-text {
@@ -122,11 +120,36 @@ input[type="button"] {
 
 .third-btn {
   width: 50%;
-  margin: 20px 25%;
+  margin: 20px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 1390px) {
+@media all and (max-width: 480px) {
+  .third-content {
+    width: 100%;
+  }
+  .third-video {
+    width: 80%;
+    height: 250px;
+  }
+
+  .third-text {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .third-content {
+    width: 80%;
+  }
+  .third-video {
+    width: 90%;
+    height: 300px;
+  }
+
+  .third-text {
+    width: 100%;
+  }
 }
