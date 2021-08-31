@@ -108,7 +108,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .fourth-container {
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: stretch;
   }
 
@@ -119,11 +119,11 @@ h2 {
   }
 
   .fourth-single {
-    flex: 0 0 150px;
+    flex: 0 0 100%;
   }
 }
 
-
+/*
 @media screen and (max-width: 480px) {
   .fourth-single > p,
   .fourth-single > h2 {
@@ -144,6 +144,6 @@ h2 {
     width: 40px;
   }
 }
-
+*/
 
 
