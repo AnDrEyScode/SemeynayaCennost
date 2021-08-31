@@ -108,7 +108,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
   .fourth-container {
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     align-items: stretch;
   }
 
