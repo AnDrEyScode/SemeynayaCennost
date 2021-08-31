@@ -4,21 +4,22 @@
 
 @font-face {
   font-family: "Montserrat-Light"; /* Гарнитура шрифта */
-  src: url("static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+  src: url("/static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: "Montserrat-Semibold";
-  src: url("static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  src: url("/static/fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Blacker Display";
-  src: url("static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+  src: url("/static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
 }
 
 html {
   -webkit-text-size-adjust: 100%;
+  min-width: 690px;
 }
 
 div,
@@ -32,7 +33,6 @@ p {
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
   line-height: 20px;
 }
 
@@ -50,11 +50,16 @@ h1 {
   text-align: center;
 }
 
+.third-bg {
+  margin: 0;
+}
+
 div.orange {
-  position: relative;
   height: 100%;
   width: 100%;
   background: rgba(162, 105, 73, 0.5);
+  margin: 0;
+  padding: 0;
 }
 
 input[type="button"] {
@@ -67,8 +72,6 @@ input[type="button"] {
   padding: 10px 40px;
   color: #fff;
   padding: 17px 52px;
-  /*left: 50%;
-  margin: 0px -25%;*/
 }
 
 /*////////////////////////////////////////////////////////////*/
@@ -77,13 +80,12 @@ input[type="button"] {
 }
 
 .third-text > p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
   text-align: center;
-  padding: 0;
+  padding: 0px 20px;
   margin: 0;
-  line-height: 20px;
+  height: 380px;
+  display: flex;
+  align-content: flex-end;
 }
 
 .third-text > h1 {
@@ -93,19 +95,20 @@ input[type="button"] {
 .third-content {
   display: flex;
   flex-flow: row wrap;
-  margin: 20px 5%;
+  margin: 0px 5%;
   justify-content: space-evenly;
   align-items: flex-end;
 }
 
-.third-video {
-  height: 380px;
-  width: 550px;
+.third-text {
+  width: 540px;
   margin-top: 20px;
 }
 
-.third-text {
-  width: 500px;
+.third-video {
+  height: 380px;
+  width: 580px;
+  margin-top: 20px;
 }
 
 .third-video > iframe {
@@ -120,13 +123,10 @@ input[type="button"] {
 .third-btn {
   width: 50%;
   margin: 20px 25%;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
 
-@media (max-width: 1350px) {
-  .third-btn {
-    display: flex;
-    justify-content: center;
-  }
+@media (max-width: 1390px) {
 }
