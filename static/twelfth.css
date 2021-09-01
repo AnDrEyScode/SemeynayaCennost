@@ -130,21 +130,8 @@ input[type="button"] {
 }
 
 @media screen and (max-width: 700px) {
-  .twelfth-container > p {
-    font-weight: 300;
-    font-size: 5px;
-    line-height: 6px;
-    margin-top: 0px;
-  }
-
-  .twelfth-container > h1 {
-    font-size: 20px;
-  }
-
-  input[type="button"] {
-    font-size: 5px;
-    height: 15px;
-    width: 80px;
-    padding: 5px;
+  
+  .twelfth{
+    background-size: 120%;
   }
 }
