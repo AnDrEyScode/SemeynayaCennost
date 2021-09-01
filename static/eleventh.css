@@ -186,12 +186,12 @@ p.textLeft {
   }
 
   .eleventh-block > img {
-    width: 70%;
+    width: 90%;
     height: auto;
   }
 
   .eleventh-block > p {
-    width: 90%;
+    width: 100%;
     padding: 0;
     text-align: center;
   }
