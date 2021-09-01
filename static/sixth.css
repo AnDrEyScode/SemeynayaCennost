@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat-Light"; /* Гарнитура шрифта */
+  src: url("fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Semibold";
+  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Blacker Display";
+  src: url("fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+div,
+p,
+h1 {
+  color: #5371ab;
+}
+
+p {
+  font-family: "Montserrat-Light", "sans-serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+div.orange div,
+div.orange p,
+div.orange h1 {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat-Semibold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.sixth-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 300px;
+
+  background-image: url("resources/Strelki.svg");
+  background-repeat: no-repeat;
+  background-position-y: 47%;
+  background-position-x: 60%;
+}
+
+.sixth-down {
+  align-self: flex-end;
+}
+
+.sixth-block {
+  padding-left: 60px;
+  margin-right: 20px;
+}
+
+#process-anket {
+  background-image: url("resources/1.svg");
+  background-repeat: no-repeat;
+}
+
+#process-disguss {
+  background-image: url("resources/2.svg");
+  background-repeat: no-repeat;
+}
+
+#process-shoot {
+  background-image: url("resources/3.svg");
+  background-repeat: no-repeat;
+}
+
+#process-result {
+  background-image: url("resources/4.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1400px) {
+  .sixth-container {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .sixth-container {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 70%;
+  }
+
+  .sixth-block {
+    width: 200px;
+  }
+
+  .sixth-down {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sixth-container {
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 80%;
+    align-content: stretch;
+  }
+
+  .sixth-block {
+    width: 80%;
+  }
+
+  .sixth-down {
+    align-self: center;
+  }
+}
