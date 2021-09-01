@@ -114,18 +114,28 @@ input[type="button"] {
     width: 150px;
     padding: 10px;
   }
-}
 
-@media screen and (max-width: 950px) {
-  .twelfth{
+  .twelfth {
     background-size: 120%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  
-  .twelfth{
-    background-size: 140%;
+/*
+@media screen and (max-width: 950px) {
+  .twelfth-container > p {
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 0px;
   }
-  
+
+  .twelfth-container > h1 {
+    font-size: 27px;
+  }
+}*/
+
+@media screen and (max-width: 480px) {
+  .twelfth {
+    background-size: 200%;
+  }
 }
