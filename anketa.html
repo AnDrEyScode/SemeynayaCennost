@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/nketaStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="anketa">
+        <h1>#Важноуспеть</h1>
+        <form action="">
+            <div>
+                <p>Ваше ФИО</p>
+                <input type="text" name="fio">
+            </div>
+            
+            <div>
+                <p>Город</p>
+                <input type="text" name="city">
+            </div>
+            
+
+            <div>
+                <p>Номер телефона</p>
+                <input type="text" name="phone">
+            </div>
+            
+            <div>
+                <p>ФИО интервьюируемого</p>
+                <input type="text" name="fioInterviewer">
+            </div>
+            
+            <div>
+                <p>Дата рождения интервьюируемого</p>
+                <input type="text" name="birthDateInterviewer">
+            </div>
+            
+            <div id="isAlive">
+                <p>Супруг/супруга (ФИО) (жив/скончался)</p>
+                <input type="text" name="partner">
+                <div>
+                    <input type="radio" name="isAlive" value="alive"> <span>Жив(а)</span>
+                    <input type="radio" name="isAlive" value="died"> <span>Скончался(алась)</span>
+                </div>
+            </div>
+            
+            <div>
+                <p>Дети (ФИО)</p>
+                <input type="text" name="fioChildren">
+            </div>
+            
+            <div>
+                <p>Братья, сёстры (ФИО)</p>
+                <input type="text" name="fioBrotherSister">
+            </div>
+
+            <div>
+                <p>Профессия, хобби, увлечение</p>
+                <input type="text" name="occupation">
+            </div>
+            
+            <div>
+                <p>Особенности (дефект речи, косогласие, инвалидность, и т.д и т.п)</p>
+                <input type="text" name="feature">
+            </div>
+            
+            <div id="soundVariants">
+                <p>Вариант озвучки вопросов</p>
+                <div>
+                    <div>
+                        <input type="radio" name="sound" value="classic">
+                        <label>Классический. Голос интервьюера слышен на видео</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="sound" value="mute">
+                        <label>Беззвучный. Голос интервьюера исключается из готового видео. Текст вопроса пишется на экране</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sound" value="authors">
+                        <label>Авторский. Вы сами или выбранный Вами человек задаëт вопросы</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="button"><input type="submit"></div>
+            
+        </form>
+    </div>
+</body>
+</html>
