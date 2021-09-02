@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Blacker Display";
+  src: url("fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 54px;
+  text-align: center;
+  color: #5371ab;
+}
+
+.fifth-container {
+  width: 800px;
+  height: fit-content;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.fifth-content {
+  /*background-color: red;*/
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.fifth-big-video {
+  /*background-color: green;*/
+  width: 800px;
+  height: 450px;
+  margin: auto;
+}
+
+.fifth-small-videos {
+  /*background-color: blue;*/
+  display: flex;
+  flex-flow: row nowrap;
+  width: 800px;
+  height: 150px;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.fifth-small-video {
+  /*background-color: yellow;*/
+  flex-grow: 1;
+  width: 260px;
+  height: 150px;
+  padding: 10px 10px 0px 10px;
+
+  flex: 0 0 260px;
+}
+
+.fifth-small-video:first-child {
+  padding-left: 0;
+}
+
+.fifth-small-video:last-child {
+  padding-right: 0px;
+}
+
+.fifth-scroll {
+  width: 80%;
+  margin-left: 30px;
+}
+
+.fifth-small-video > iframe,
+.fifth-big-video > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: 2px solid black;
+}
+
+input[type="range"] {
+  width: 200px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 3px;
+  border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background: #f8ad4e;
+
+  border-radius: 40px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
+@media screen and (max-width: 850px) {
+  .fifth-small-videos {
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  .fifth-small-video,
+  .fifth-big-video {
+    width: 450px;
+    height: 280px;
+    padding: 0;
+    padding-bottom: 20px;
+    flex: 1 1 auto;
+    margin: auto;
+  }
+
+  .fifth-scroll {
+    visibility: hidden;
+  }
+
+  .fifth-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fifth-small-videos {
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+    height: auto;
+    flex: 1 1 auto;
+  }
+
+  .fifth-small-video,
+  .fifth-big-video {
+    width: 350px;
+    height: 220px;
+    padding: 0;
+    padding-bottom: 20px;
+    flex: 1 1 auto;
+  }
+
+  .fifth-scroll {
+    visibility: hidden;
+  }
+}

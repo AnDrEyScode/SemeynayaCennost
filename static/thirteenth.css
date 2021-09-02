@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat-Light"; /* Гарнитура шрифта */
+  src: url("fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Semibold";
+  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Blacker Display";
+  src: url("fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+div,
+p,
+h1 {
+  color: #5371ab;
+}
+
+p {
+  font-family: "Montserrat-Light", "sans-serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+div.orange div,
+div.orange p,
+div.orange h1 {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Montserrat-Semibold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+input[type="range"] {
+  width: 200px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 3px;
+  border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background: #f8ad4e;
+
+  border-radius: 40px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
+.thirteenth {
+  min-height: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thirteenth-controls > p > input[type="image"] {
+  margin: 0px 10px;
+}
+
+.thirteenth-container {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thirteenth-responses {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.thirteenth-response {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  margin: 0px 20px;
+}
+
+.thirteenth-response > p {
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.thirteenth-response > h2 {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .thirteenth-response {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .thirteenth-response:first-child,
+  .thirteenth-response:last-child {
+    visibility: hidden;
+  }
+
+  .thirteenth-response {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .thirteenth-response {
+    width: 300px;
+  }
+}

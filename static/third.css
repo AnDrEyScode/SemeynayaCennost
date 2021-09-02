@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat-Light"; /* Гарнитура шрифта */
+  src: url("/static/fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Montserrat-Semibold";
+  src: url("/static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Blacker Display";
+  src: url("/static/fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+div,
+p,
+h1 {
+  color: #5371ab;
+}
+
+p {
+  font-family: "Montserrat-Light", "sans-serif";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+div.orange div,
+div.orange p,
+div.orange h1 {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 54px;
+  text-align: center;
+}
+
+.third-bg {
+  margin: 0;
+}
+
+div.orange {
+  height: 100%;
+  width: 100%;
+  background: rgba(162, 105, 73, 0.5);
+  margin: 0;
+  padding: 0;
+}
+
+input[type="button"] {
+  position: relative;
+  background: #f8ad4e;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 14px;
+  font-family: "Montserrat-Semibold", sans-serif;
+  padding: 10px 40px;
+  color: #fff;
+  padding: 17px 52px;
+}
+
+/*////////////////////////////////////////////////////////////*/
+.third {
+  position: relative;
+  min-height: 700px;
+}
+.third-bg {
+  height: 100%;
+  min-height: 700px;
+  background-image: url("resources/Frame8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.third-bg > div.orange {
+  min-height: 700px;
+}
+
+.third-container {
+  padding: 5% 0px;
+}
+.third-text > p {
+  text-align: center;
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.third-text > h1 {
+  margin-bottom: 20px;
+}
+
+.third-content {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.third-video > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.half {
+  flex: 0 1 auto;
+}
+
+.third-btn {
+  width: 50%;
+  margin: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.third-text {
+  width: 540px;
+  margin-top: 20px;
+}
+
+.third-video {
+  height: 380px;
+  width: 580px;
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .third-content {
+    width: 80%;
+  }
+  .third-video {
+    width: 90%;
+    height: 250px;
+  }
+
+  .third-text {
+    width: 100%;
+  }
+
+  .third-btn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .third-content {
+    width: 100%;
+  }
+  .third-video {
+    width: 80%;
+    height: 200px;
+  }
+
+  .third-text {
+    width: 90%;
+  }
+
+  .third-btn {
+    margin: auto;
+  }
+}
