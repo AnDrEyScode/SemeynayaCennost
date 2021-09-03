@@ -59,34 +59,31 @@ h2 {
 /*1//////////////////////////////////////*/
 div#main {
   position: relative;
-  width: 100%;
-  margin: 0%;
 }
 
 div#first {
-  height: 800px;
+  min-height: 800px;
   position: relative;
-  left: 0px;
-  top: 0px;
-  margin: 0%;
+  display: flex;
 }
 
 div#bgfirst {
-  background-image: url("resources/MainBack.jpg");
-  position: absolute;
-  height: 800px;
+  position: relative;
+  min-height: 800px;
   width: 100%;
-  align-content: center;
   background: linear-gradient(
       0deg,
       rgba(248, 173, 78, 0.22),
       rgba(248, 173, 78, 0.22)
     ),
     url("resources/MainBack.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 div.orange {
-  position: relative;
+  position: absolute;
   height: 100%;
   width: 100%;
   background: rgba(162, 105, 73, 0.5);
@@ -142,18 +139,43 @@ div#firstContent {
   align-items: center;
 }
 
-/*div#firstContent > img {
-  position: relative;
-  left: 50%;
-  top: 5%;
-  margin: 0% -15%;
-}*/
-
 div#firstContent p {
   position: relative;
-  width: 80%;
+  width: 100%;
   text-align: center;
   top: -5%;
+}
+
+@media screen and (max-width: 1400px) {
+  div#bgfirst {
+    background-size: 140%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div#bgfirst {
+    background-size: 200%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div#bgfirst {
+    background-size: 240%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div#bgfirst {
+    background-size: 280%;
+    background-position-x: 40%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div#bgfirst {
+    background-size: 320%;
+    background-position-x: 40%;
+  }
 }
 
 /*2//////////////////////////////////////////////////*/
@@ -161,15 +183,19 @@ div#firstContent p {
 div#second {
   width: 100%;
   position: relative;
-  height: 155px;
-  align-content: center;
-  margin: 0%;
+  min-height: 155px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 div#frase {
   position: relative;
-  width: 853px auto;
-  margin-top: 28px;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 10px;
   font-family: "Blacker Display", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -181,9 +207,9 @@ div#frase {
 
 div.line {
   border: 1px solid #f8ad4e;
-  width: 35%;
+  width: 100%;
   height: 0px;
-  margin: 0% -17.5%;
+  margin: 0% -50%;
 
   position: relative;
   top: 30%;
@@ -201,6 +227,10 @@ div.circle {
   left: 50%;
   top: 30%;
   margin: -8px -5px;
+}
+
+.frase-decoration {
+  width: 80%;
 }
 
 /*3//////////////////////////////////////////////////*/
