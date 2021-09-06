@@ -1,63 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Montserrat-Light"; /* Гарнитура шрифта */
-  src: url("fonts/Montserrat/Montserrat-Light.ttf"); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-  font-family: "Montserrat-Semibold";
-  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Blacker Display";
-  src: url("fonts/BlackerDisplay/BlackerDisplay-Light.ttf");
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-div,
-p,
-h1 {
-  color: #5371ab;
-}
-
-p {
-  font-family: "Montserrat-Light", "sans-serif";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 20px;
-}
-
-div.orange div,
-div.orange p,
-div.orange h1 {
-  color: #fff;
-}
-
-h1 {
-  font-family: "Blacker Display";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 54px;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Montserrat-Semibold";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 19px;
-}
-
 .seventh {
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
@@ -89,7 +31,7 @@ h2 {
 }
 
 .seventh-container {
-  margin: auto;
+  margin: 0px auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -97,13 +39,17 @@ h2 {
 }
 
 .seventh-img {
+  position: relative;
   min-width: 350px;
   margin: auto;
   display: flex;
+  height: 300px;
 }
 
 .seventh-img > img {
   margin: auto;
+  height: 100%;
+  width: auto;
 }
 
 @media screen and (max-width: 800px) {
