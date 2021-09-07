@@ -130,6 +130,10 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+div#first input {
+  margin: 20px;
+}
+
 div#firstContent {
   width: 50%;
   margin: 90px 25%;
@@ -144,6 +148,7 @@ div#firstContent p {
   width: 100%;
   text-align: center;
   top: -5%;
+  margin: 0px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -169,11 +174,16 @@ div#firstContent p {
     background-size: 280%;
     background-position-x: 40%;
   }
+
+  .menu {
+    position: absolute;
+    visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 480px) {
   div#bgfirst {
-    background-size: 320%;
+    background-size: 360%;
     background-position-x: 40%;
   }
 }
@@ -231,6 +241,12 @@ div.circle {
 
 .frase-decoration {
   width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  #frase {
+    font-size: 27px;
+  }
 }
 
 /*3//////////////////////////////////////////////////*/
