@@ -15,14 +15,21 @@
 .third-bg > div.orange {
   min-height: 700px;
 }
+.third .orange {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
 
 .third-container {
   padding: 5% 0px;
 }
+
 .third-text > p {
   text-align: center;
   padding: 0px 20px;
   margin: 0;
+  line-height: 25px;
 }
 
 .third-text > h1 {
@@ -82,6 +89,10 @@
   .third-btn {
     margin: auto;
   }
+
+  .third-text > p {
+    line-height: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -99,5 +110,20 @@
 
   .third-btn {
     margin: auto;
+  }
+
+  .third-container {
+    padding: 0;
+  }
+  .third-text {
+    margin: 0%;
+  }
+
+  .third {
+    min-height: 800px;
+  }
+
+  .third-bg {
+    min-height: 800px;
   }
 }

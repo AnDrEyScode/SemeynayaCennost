@@ -91,7 +91,6 @@ div.orange {
 
 .menu {
   position: relative;
-  left: 50%;
   top: 5%;
   margin: 0px -35%;
   width: 70%;
@@ -151,6 +150,13 @@ div#firstContent p {
   margin: 0px;
 }
 
+#first .orange {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1400px) {
   div#bgfirst {
     background-size: 140%;
@@ -166,6 +172,11 @@ div#firstContent p {
 @media screen and (max-width: 800px) {
   div#bgfirst {
     background-size: 240%;
+  }
+
+  div#firstContent {
+    width: 80%;
+    align-items: center;
   }
 }
 
@@ -183,7 +194,7 @@ div#firstContent p {
 
 @media screen and (max-width: 480px) {
   div#bgfirst {
-    background-size: 360%;
+    background-size: 420%;
     background-position-x: 40%;
   }
 }
@@ -199,6 +210,7 @@ div#second {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  min-height: 350px;
 }
 
 #frase {
@@ -390,6 +402,8 @@ div#map > iframe {
 
   position: relative;
 }
+
+/*/////////////////////////////////////*/
 
 @media screen and (max-width: 600px) {
   p {
