@@ -1,0 +1,51 @@
+.fourteenth {
+  min-height: 500px;
+  margin: 30px 0px;
+}
+
+.fourteenth-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.fourteenth-contacts {
+  flex: 1 1 40%;
+}
+
+.fourteenth-map {
+  flex: 1 1 60%;
+}
+
+.fourteenth-map > iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+}
+
+.fourteenth-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.fourteenth-text > h1 {
+  margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .fourteenth-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .fourteenth-contacts {
+    flex: 1 0 100%;
+  }
+
+  .fourteenth-map {
+    flex: 1 0 100%;
+    min-height: 200px;
+  }
+}
