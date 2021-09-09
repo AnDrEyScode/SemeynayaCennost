@@ -56,64 +56,6 @@ h2 {
   font-size: 19px;
 }
 
-/*1//////////////////////////////////////*/
-div#main {
-  position: relative;
-}
-
-div#first {
-  min-height: 800px;
-  position: relative;
-  display: flex;
-}
-
-div#bgfirst {
-  position: relative;
-  min-height: 800px;
-  width: 100%;
-  background: linear-gradient(
-      0deg,
-      rgba(248, 173, 78, 0.22),
-      rgba(248, 173, 78, 0.22)
-    ),
-    url("resources/MainBack.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
-div.orange {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(162, 105, 73, 0.5);
-}
-
-.menu {
-  position: relative;
-  top: 5%;
-  margin: 0px -35%;
-  width: 70%;
-  display: table; /*Блок меню - таблица*/
-  margin-top: 0.5%; /* Движение всего блока меню вверх-вниз*/
-}
-.menu ul {
-  display: table-row; /* ориентаиция ul как ряд в таблице*/
-}
-.menu li {
-  display: table-cell; /* ориентация элемента меню как клетку таблицы*/
-
-  height: 100%;
-}
-.menu li a {
-  display: block;
-  padding: 10% 20%; /* движение надписей в блоке вверх-вниз*/
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 24px;
-}
-
 input[type="button"] {
   position: relative;
   background: #f8ad4e;
@@ -129,75 +71,11 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
-div#first input {
-  margin: 20px;
-}
-
-div#firstContent {
-  width: 50%;
-  margin: 90px 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-div#firstContent p {
+div#main {
   position: relative;
-  width: 100%;
-  text-align: center;
-  top: -5%;
-  margin: 0px;
 }
 
-#first .orange {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 1400px) {
-  div#bgfirst {
-    background-size: 140%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  div#bgfirst {
-    background-size: 200%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  div#bgfirst {
-    background-size: 240%;
-  }
-
-  div#firstContent {
-    width: 80%;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div#bgfirst {
-    background-size: 280%;
-    background-position-x: 40%;
-  }
-
-  .menu {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  div#bgfirst {
-    background-size: 420%;
-    background-position-x: 40%;
-  }
-}
+/*1//////////////////////////////////////*/
 
 /*2//////////////////////////////////////////////////*/
 
@@ -276,7 +154,6 @@ div.circle {
 /*9//////////////////////////////////////////////////*/
 
 div#ninth {
-  height: 625px;
   position: relative;
   margin: 0%;
 }
@@ -308,7 +185,7 @@ div.plusVertical {
   height: 17px;
   border: 1px solid #f8ad4e;
   position: absolute;
-  right: 30px;
+  right: 29px;
   top: 50%;
   margin: -8.5px 0px;
 }
@@ -339,75 +216,11 @@ div.plusHorizontal {
 
 /*14//////////////////////////////////////////////////*/
 
-div#fourteenth {
-  height: 535px;
-  position: relative;
-  top: 0%;
-  margin-top: 200px;
-}
-
-div#fourteenthcontent {
-  position: relative;
-  top: 0%;
-  left: 0%;
-  width: 40%;
-  height: 100%;
-}
-
-div#contacts {
-  position: relative;
-  width: 70%;
-  height: 60%;
-  left: 50%;
-  top: 25%;
-  margin: -35%;
-  text-align: center;
-}
-div#contacts > p {
-  position: relative;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #5371ab;
-  padding-left: 5%;
-}
-div#contacts > h1 {
-  font-family: Blacker Display;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 54px;
-  line-height: 128.6%;
-  color: #5371ab;
-}
-
-div#contacts > a {
-  position: relative;
-  left: 20%;
-  margin-left: 5%;
-}
-
-div#map {
-  position: absolute;
-  height: 100%;
-  width: 60%;
-  right: 0%;
-  top: 0%;
-}
-div#map > iframe {
-  width: 100%;
-  height: 100%;
-
-  position: relative;
-}
-
 /*/////////////////////////////////////*/
 
 @media screen and (max-width: 600px) {
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   h1 {
