@@ -2,23 +2,13 @@
 .third {
   position: relative;
   min-height: 700px;
-}
-.third-bg {
-  height: 100%;
-  min-height: 700px;
-  background-image: url("resources/Frame8.jpg");
+  position: relative;
+  background-image: url("resources/Thirdbg.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-}
-
-.third-bg > div.orange {
+  background-position: center;
   min-height: 700px;
-}
-.third .orange {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  height: max-content;
 }
 
 .third-container {
@@ -30,10 +20,12 @@
   padding: 0px 20px;
   margin: 0;
   line-height: 25px;
+  color: #fff;
 }
 
 .third-text > h1 {
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .third-content {
