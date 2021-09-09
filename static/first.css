@@ -1,0 +1,165 @@
+.first {
+  position: relative;
+  background-image: url("resources/Firstbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+  height: max-content;
+  display: flex;
+  flex-flow: column;
+}
+
+.first-button-menu {
+  height: 26px;
+  width: 30px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  z-index: 50;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  visibility: hidden;
+}
+
+.first-button-menu-line {
+  border: 2px solid #fff;
+  border-radius: 50px;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: visible;
+}
+
+.orange {
+  border-color: #f8ad4e;
+  background-color: #f8ad4e;
+}
+
+.header {
+  padding: 12px 0px;
+  margin-top: 30px;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu {
+  margin: 0%;
+  padding: 0%;
+  list-style: none; /*Отключаем маркеры*/
+  display: flex;
+  text-align: center;
+}
+
+.navbar-item {
+  margin: 0px 40px;
+  font-family: "Blacker Display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  /* or  */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.first-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.first-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.first-container > h1 {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.first-container > p {
+  color: #fff;
+  text-align: center;
+}
+
+.first-container > img {
+  width: 250px;
+}
+
+div.first-container input[type="button"] {
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-item {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hidden {
+    visibility: hidden;
+  }
+  .header {
+    height: 0%;
+    padding: 0%;
+    margin: 0%;
+  }
+  .navbar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #7b5037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 30px;
+  }
+
+  .navbar-item {
+    margin: 5px 30px;
+  }
+
+  .first-content {
+    margin: auto;
+  }
+
+  .first-container {
+    width: 80%;
+  }
+
+  .first-button-menu {
+    visibility: visible;
+  }
+}
