@@ -75,6 +75,17 @@ div#main {
   position: relative;
 }
 
+.content > div {
+  margin: 50px 0px;
+}
+
+div.first {
+  margin-top: 0px;
+}
+div#second {
+  margin: 0px;
+}
+
 /*1//////////////////////////////////////*/
 
 /*2//////////////////////////////////////////////////*/
@@ -107,6 +118,19 @@ div#second {
 
 div.line {
   border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
+  width: 100%;
+  height: 0px;
+  margin: 0% -50%;
+
+  position: relative;
+  top: 30%;
+  left: 50%;
+}
+
+div.line-answer {
+  border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
   width: 100%;
   height: 0px;
   margin: 0% -50%;
@@ -180,29 +204,58 @@ div#ninth p {
   text-align: left;
 }
 
-div.plusVertical {
-  width: 0px;
-  height: 17px;
-  border: 1px solid #f8ad4e;
+.plus {
+  width: 18px;
+  height: 18px;
   position: absolute;
-  right: 29px;
-  top: 50%;
-  margin: -8.5px 0px;
+  right: 25px;
+  top: 30px;
+  margin: -9px 0px;
 }
 
-div.plusHorizontal {
-  height: 0px;
-  width: 17px;
+.plus-rotate {
+  transform: rotateZ(45deg);
+  transition-duration: 400ms;
+}
+
+div.plus-blue {
+  border: 1px solid #5371ab;
+  background-color: #5371ab;
+}
+
+.plusVertical {
+  width: 2px;
+  height: 100%;
   border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
   position: absolute;
-  right: 30px;
-  top: 50%;
-  margin: 0px -8.5px;
+  left: 8px;
+}
+
+.plusHorizontal {
+  height: 2px;
+  width: 100%;
+  border: 1px solid #f8ad4e;
+  background-color: #f8ad4e;
+  position: absolute;
+  top: 8px;
 }
 
 @media screen and (max-width: 600px) {
   div#ninth p {
     font-size: 12px;
+  }
+
+  div#questions {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    margin: 0% -45%;
+  }
+
+  .plus {
+    right: 15px;
+    top: 25px;
   }
 }
 

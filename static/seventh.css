@@ -1,7 +1,8 @@
-.seventh {
+div.seventh {
   min-height: 400px;
   display: flex;
   align-items: center;
+  margin-bottom: 0%;
 }
 .seventh-text {
   display: flex;

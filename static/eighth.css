@@ -22,6 +22,10 @@ div.circle {
   margin: -8px -5px;
 }
 
+.eighth {
+  height: max-content;
+}
+
 .frase-decoration {
   width: 80%;
 }
@@ -47,11 +51,12 @@ div.circle {
   text-transform: uppercase;
 }
 
-.eighth {
+div.eighth {
   min-height: 400px;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  margin-top: 0%;
 }
 
 .eighth-container {
@@ -72,11 +77,13 @@ div.circle {
   text-align: center;
 }
 
-.eighth-container > a:link,
-.eighth-container > a:active,
-.eighth-container > a:visited,
-.eighth-container > a:hover {
+.eighth-action-show {
   color: #f8ad4e;
+  text-decoration: underline;
+}
+
+.eighth-action-show:hover {
+  cursor: pointer;
 }
 
 .eighth-price-container {
