@@ -213,6 +213,10 @@ div#ninth p {
   margin: -9px 0px;
 }
 
+.plus:hover {
+  cursor: pointer;
+}
+
 .plus-rotate {
   transform: rotateZ(45deg);
   transition-duration: 400ms;
