@@ -9,8 +9,7 @@
   background-position: center center;
   background-attachment: fixed;
   overflow: hidden;
-  /*height: max-content;*/
-  height: 100vh;
+  height: max-content;
 }
 
 .third-container {
