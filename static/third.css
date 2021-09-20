@@ -6,9 +6,11 @@
   background-image: url("resources/Thirdbg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 700px;
-  height: max-content;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  /*height: max-content;*/
+  height: 100vh;
 }
 
 .third-container {
