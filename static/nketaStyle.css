@@ -11,8 +11,7 @@
 div#anketa {
   width: 40%;
   position: relative;
-  left: 50%;
-  margin: 0% -20%;
+  margin: 0% auto;
   color: #5371ab;
 }
 
@@ -132,4 +131,10 @@ div#soundVariants label {
 
 div#soundVariants > div {
   height: max-content;
+}
+
+@media screen and (max-width: 600px) {
+  div#anketa {
+    width: 80%;
+  }
 }
