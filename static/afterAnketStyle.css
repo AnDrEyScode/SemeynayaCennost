@@ -23,3 +23,9 @@ p {
   text-align: center;
   line-height: 25px;
 }
+
+@media screen and (max-width: 500px) {
+  .afterAnket-container {
+    width: 90%;
+  }
+}
