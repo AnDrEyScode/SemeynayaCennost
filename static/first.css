@@ -163,3 +163,49 @@ div.first-container input[type="button"] {
     visibility: visible;
   }
 }
+
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+  width: 220px;
+  height: 50px;
+  background: #ffffff;
+  border: 2px solid #5371ab;
+  box-sizing: border-box;
+  border-radius: 33.4712px;
+  outline: none;
+  padding: 0 15px;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="text"]:hover {
+  background-color: rgba(256, 256, 256, 0);
+  border: 2px solid #f8ad4e;
+  color: #fff;
+}
+
+input[type="tel"]:hover::-webkit-input-placeholder,
+input[type="email"]:hover::-webkit-input-placeholder,
+input[type="text"]:hover::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.first-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+}
+.first-form-txtbox-group {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .first-form-txtbox-group {
+    flex-direction: column;
+  }
+}
