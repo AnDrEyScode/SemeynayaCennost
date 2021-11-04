@@ -8,11 +8,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  height: max-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .third-container {
-  padding: 5% 0px;
 }
 
 .third-text > p {
@@ -20,6 +22,7 @@
   padding: 0px 20px;
   margin: 0;
   line-height: 25px;
+  padding: 0px;
   color: #fff;
 }
 
@@ -43,7 +46,8 @@
 }
 
 .half {
-  flex: 0 1 auto;
+  flex: 0 1 560px;
+  margin: 0px;
 }
 
 .third-btn {
@@ -76,6 +80,7 @@
 
   .third-text {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .third-btn {

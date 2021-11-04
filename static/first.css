@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 700px;
-  height: max-content;
+  height: 100vh;
   display: flex;
   flex-flow: column;
 }
@@ -70,7 +70,7 @@
   font-family: "Blacker Display";
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 19px;
   /* or  */
 }
@@ -85,7 +85,8 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 0px auto;
+  height: 100%;
 }
 
 .first-container {

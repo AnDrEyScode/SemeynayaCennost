@@ -21,13 +21,6 @@
   flex-flow: column nowrap;
 }
 
-.fourth-single > p {
-  width: 250px;
-}
-.fourth-single > h2 {
-  width: 280px;
-}
-
 .fourth-single > img,
 .fourth-single > p,
 .fourth-single > h2 {
@@ -36,14 +29,16 @@
 }
 
 .fourth-single > p {
-  font-size: 13px;
-  line-height: 16px;
+  width: 300px;
+  font-size: 18px;
+  line-height: 20px;
 }
-
 .fourth-single > h2 {
+  width: 280px;
   font-weight: 500;
   font-size: 19px;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {

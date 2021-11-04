@@ -29,7 +29,7 @@ h1 {
 
 p {
   font-family: "Montserrat-Light", "sans-serif";
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   line-height: 20px;
@@ -56,15 +56,29 @@ h2 {
   font-size: 19px;
 }
 
-input[type="button"] {
+input[type="button"],
+input[type="submit"] {
   position: relative;
-  background: #f8ad4e;
+  background-color: #f8ad4e;
   border-radius: 25px;
-  border: 0px;
+  border: 3px solid #f8ad4e;
   font-size: 14px;
   font-family: "Montserrat-Semibold", sans-serif;
   color: #fff;
-  padding: 17px 52px;
+  padding: 14px 52px;
+}
+
+input[type="button"]:hover,
+input#submit:hover {
+  background-color: rgba(256, 256, 256, 0);
+  color: #f8ad4e;
+  border: 3px solid #f8ad4e;
+  cursor: pointer;
+}
+
+.first input[type="button"]:hover,
+.third input[type="button"]:hover {
+  color: #fff;
 }
 
 input[type="button"]:hover {
@@ -163,18 +177,6 @@ div.circle {
   }
 }
 
-/*3//////////////////////////////////////////////////*/
-
-/*4//////////////////////////////////////////////////*/
-
-/*5//////////////////////////////////////////////////*/
-
-/*6//////////////////////////////////////////////////*/
-
-/*7//////////////////////////////////////////////////*/
-
-/*8//////////////////////////////////////////////////*/
-
 /*9//////////////////////////////////////////////////*/
 
 div#ninth {
@@ -262,16 +264,6 @@ div.plus-blue {
     top: 25px;
   }
 }
-
-/*10//////////////////////////////////////////////////*/
-
-/*11//////////////////////////////////////////////////*/
-
-/*12//////////////////////////////////////////////////*/
-
-/*13//////////////////////////////////////////////////*/
-
-/*14//////////////////////////////////////////////////*/
 
 /*/////////////////////////////////////*/
 
