@@ -14,9 +14,6 @@
   justify-content: center;
 }
 
-.third-container {
-}
-
 .third-text > p {
   text-align: center;
   padding: 0px 20px;
@@ -94,7 +91,7 @@
 
 @media screen and (max-width: 480px) {
   .third-content {
-    width: 100%;
+    width: 90%;
   }
   .third-video {
     width: 80%;
