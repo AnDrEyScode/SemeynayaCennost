@@ -92,6 +92,7 @@
 @media screen and (max-width: 480px) {
   .third-content {
     width: 90%;
+    margin: 10px auto;
   }
   .third-video {
     width: 80%;

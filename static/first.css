@@ -158,10 +158,17 @@ div.first-container input[type="button"] {
 
   .first-container {
     width: 80%;
+    margin: 10px auto;
   }
 
   .first-button-menu {
     visibility: visible;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .first-container > img {
+    width: 80%;
   }
 }
 

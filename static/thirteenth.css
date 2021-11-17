@@ -74,14 +74,15 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media screen and (max-width: 820px) {
-  .thirteenth-response:first-child,
-  .thirteenth-response:last-child {
+  .thirteenth-response {
     visibility: hidden;
     position: absolute;
+    width: 350px;
   }
 
-  .thirteenth-response {
-    width: 350px;
+  .thirteenth-response:first-child {
+    visibility: visible;
+    position: relative;
   }
 }
 
