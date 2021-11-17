@@ -107,7 +107,7 @@
   }
 
   .third-container {
-    padding: 20px 0px;
+    padding: 40px 0px;
   }
   .third-text {
     margin: 0%;
@@ -115,6 +115,7 @@
 
   .third {
     min-height: 800px;
+    height: unset;
   }
 
   .third-bg {
