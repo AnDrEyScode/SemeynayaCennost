@@ -92,7 +92,6 @@
 @media screen and (max-width: 480px) {
   .third-content {
     width: 90%;
-    padding: 10px 0px;
   }
   .third-video {
     width: 80%;
@@ -108,7 +107,7 @@
   }
 
   .third-container {
-    padding: 0;
+    padding: 10px 0px;
   }
   .third-text {
     margin: 0%;
