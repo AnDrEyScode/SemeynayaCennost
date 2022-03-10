@@ -14,6 +14,12 @@
   justify-content: center;
 }
 
+.third-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .third-text > p {
   text-align: center;
   padding: 0px 20px;
@@ -26,6 +32,10 @@
 .third-text > h1 {
   margin-bottom: 20px;
   color: #fff;
+}
+
+.third-text input {
+  margin-top: 20px;
 }
 
 .third-content {
@@ -61,7 +71,7 @@
 }
 
 .third-video {
-  height: 380px;
+  height: 326px;
   width: 580px;
   margin: 20px 0px;
 }
@@ -86,6 +96,11 @@
 
   .third-text > p {
     line-height: 20px;
+  }
+
+  .third-text input {
+    display: none;
+    position: absolute;
   }
 }
 
@@ -120,5 +135,10 @@
 
   .third-bg {
     min-height: 800px;
+  }
+
+  .third-text input {
+    display: none;
+    position: absolute;
   }
 }
