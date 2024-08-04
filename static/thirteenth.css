@@ -67,6 +67,15 @@ input[type="range"]::-webkit-slider-thumb {
   margin-bottom: 0;
 }
 
+.thirteenth-galery {
+  margin: 20px auto;
+}
+.thirteenth-big-video {
+  width: 600px;
+  height: 350px;
+  margin: auto;
+}
+
 @media screen and (max-width: 1200px) {
   .thirteenth-response {
     width: 250px;

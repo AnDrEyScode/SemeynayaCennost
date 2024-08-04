@@ -18,36 +18,6 @@
   margin: auto;
 }
 
-.fifth-small-videos {
-  /*background-color: blue;*/
-  visibility: hidden;
-  position: absolute;
-  display: flex;
-  flex-flow: row nowrap;
-  width: 800px;
-  height: 150px;
-  margin: 10px auto;
-  justify-content: space-between;
-}
-
-.fifth-small-video {
-  /*background-color: yellow;*/
-  flex-grow: 1;
-  width: 260px;
-  height: 150px;
-  padding: 10px 10px 0px 10px;
-
-  flex: 0 0 260px;
-}
-
-.fifth-small-video:first-child {
-  padding-left: 0;
-}
-
-.fifth-small-video:last-child {
-  padding-right: 0px;
-}
-
 .fifth-galery {
   /* width: 80%; */
   /* position: absolute; */
